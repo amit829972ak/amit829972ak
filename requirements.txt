@@ -1,10 +1,15 @@
-time
-requests
 streamlit
-streamlit_lottie 
-streamlit_lottie 
+numpy
+pandas 
+seaborn 
+matplotlib
+plotly
+scikit_learn
 PyPDF2
 io
 openai
 docx2txt
 pyperclip
+rt time
+requests
+streamlit_lottie
