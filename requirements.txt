@@ -1,10 +1,10 @@
 
-import requests
-import streamlit as st
-from streamlit_lottie import st_lottie
-from streamlit_lottie import st_lottie_spinner
-import PyPDF2
-import io
-import openai
-import docx2txt
-import pyperclip
+requests
+streamlit
+streamlit_lottie import st_lottie
+streamlit_lottie import st_lottie_spinner
+PyPDF2
+io
+openai
+docx2txt
+pyperclip
