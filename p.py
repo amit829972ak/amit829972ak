@@ -8,7 +8,7 @@ import io
 import openai
 import docx2txt
 import pyperclip
-
+import time
 
 def load_lottieurl(url: str):
     r = requests.get(url)
