@@ -1,8 +1,8 @@
 
 requests
 streamlit
-streamlit_lottie import st_lottie
-streamlit_lottie import st_lottie_spinner
+streamlit_lottie 
+streamlit_lottie
 PyPDF2
 io
 openai
