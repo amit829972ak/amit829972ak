@@ -80,7 +80,7 @@ def get_answers_from_gpt(text, question):
     
 
 def main():
-    st.header('Please Uploaded a File')
+    st.header('Please Upload a File')
     
     uploaded_file = st.file_uploader('Choose a file', type=['pdf','docx','txt'])
     
@@ -90,9 +90,9 @@ def main():
         
         if text is not None:
             
-            question = get_questions_from_gpt(text)
+            #question = get_questions_from_gpt(text)
             
-            st.write('Question: ' + question)
+            #st.write('Question: ' + question)
             
             user_question = st.text_input('Ask a question about the document')
             
@@ -111,7 +111,7 @@ def main():
 
                     st_lottie(lottie_hello)
                 
-                    st.write('Thank you for using the app, I hope you find this useful and got your answers. If you want to copy the answer, Please click ont the ***Copy Answer Text*** button.')
+                    st.write('Thank you for using the app. I hope you founf this useful and got your answer. If you want to copy the answer, please click on the ***Copy Answer Text*** button.')
                 
             if st.button('Copy Answer Text'):
                     pyperclip.copy(answer)
