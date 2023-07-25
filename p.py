@@ -75,7 +75,7 @@ def get_questions_from_gpt(text):
 def get_answers_from_gpt(text, question):
     prompt = text[:4096] + "\nQuestion: " + question + "\nAnswer:"
     
-    response =openai.Completion.create(engine="text-davinci-003", prompt=prompt, temperature=0.6, max_tokens=2000)
+    response =openai.Completion.create(engine="text-davinci-003", prompt=prompt, temperature=0.5, max_tokens=2000)
     return response.choices[0].text.strip()
     
 
@@ -89,10 +89,6 @@ def main():
         text = extract_text_from_file(uploaded_file)
         
         if text is not None:
-            
-            #question = get_questions_from_gpt(text)
-            
-            #st.write('Question: ' + question)
             
             user_question = st.text_input('Ask a question about the document')
             
