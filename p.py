@@ -106,7 +106,7 @@ def main():
 
                     st_lottie(lottie_hello)
                 
-                    st.subheader('Thank you for using the app. I hope you founf this useful and got your answer.')
+                    st.subheader('Thank you for using the app. I hope you found this useful and got your answer.')
                 
  
 if __name__ == "__main__":
