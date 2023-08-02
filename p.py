@@ -7,7 +7,6 @@ import PyPDF2
 import io
 import openai
 import docx2txt
-import pyperclip
 import time
 
 def load_lottieurl(url: str):
@@ -107,11 +106,8 @@ def main():
 
                     st_lottie(lottie_hello)
                 
-                    st.write('Thank you for using the app. I hope you founf this useful and got your answer. If you want to copy the answer, please click on the ***Copy Answer Text*** button.')
+                    st.subheader('Thank you for using the app. I hope you founf this useful and got your answer.')
                 
-            if st.button('Copy Answer Text'):
-                    pyperclip.copy(answer)
-                    st.success('Answer text copied to clipboard')
  
 if __name__ == "__main__":
     main()
